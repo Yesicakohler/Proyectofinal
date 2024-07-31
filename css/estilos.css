@@ -50,7 +50,7 @@ header a:hover {
 }
 
 footer {
-  background-color: #333;
+  background-color: #ff7a85;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -135,7 +135,7 @@ textarea {
 }
 
 .botonFormulario {
-  background-color: #333;
+  background-color: rgba(210, 71, 83, 0.8431372549);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -275,6 +275,16 @@ ul {
   animation: fadeInUp 1s ease-out 1s forwards;
 }
 
+.testimonios .card {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row .col:last-child {
+  margin-bottom: 0;
+}
+
 @keyframes zoomFadeIn {
   from {
     transform: scale(0.9);
@@ -294,8 +304,8 @@ body {
   overflow: hidden;
   transform: scale(1);
   opacity: 1;
-  transition: transform 0.3s ease-out, opacity 0.3s ease-out, box-shadow 0.3s ease-out;
-  animation: zoomFadeIn 0.3s ease-out forwards;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out, box-shadow 0.5s ease-out;
+  animation: zoomFadeIn 0.5s ease-out forwards;
 }
 .card:hover {
   transform: scale(1.05);
@@ -303,7 +313,7 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .card .card-body {
-  transition: box-shadow 0.3s ease-out;
+  transition: box-shadow 0.5s ease-out;
 }
 
 /*# sourceMappingURL=estilos.css.map */

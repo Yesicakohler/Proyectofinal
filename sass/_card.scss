@@ -1,5 +1,20 @@
+.testimonios {
+    .card {
+    margin-bottom: 20px; 
 
-$animation-duration: 0.3s;
+    
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.row {
+    .col:last-child {
+    margin-bottom: 0;
+    }
+}
+
+$animation-duration: 0.5s;
 $animation-ease: ease-out;
 
 @keyframes zoomFadeIn {
@@ -13,24 +28,22 @@ to {
 }
 }
 
-// Estilos generales
 body {
 font-family: Arial, sans-serif;
 }
 
-// Estilos para las tarjetas
 .card {
 position: relative;
 overflow: hidden;
-  transform: scale(1); // Escala inicial
-  opacity: 1; // Opacidad inicial
+  transform: scale(1); 
+  opacity: 1;
 transition: transform $animation-duration $animation-ease, opacity $animation-duration $animation-ease, box-shadow $animation-duration $animation-ease;
-  animation: zoomFadeIn $animation-duration $animation-ease forwards; // Aplicar animación
+  animation: zoomFadeIn $animation-duration $animation-ease forwards; 
 
 &:hover {
-    transform: scale(1.05); // Aumentar el tamaño en hover
-    opacity: 1; // Mantener opacidad completa
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Sombra en hover
+    transform: scale(1.05); 
+    opacity: 1; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-body {
