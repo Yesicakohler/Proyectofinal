@@ -1,0 +1,41 @@
+
+$animation-duration: 0.3s;
+$animation-ease: ease-out;
+
+@keyframes zoomFadeIn {
+from {
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+to {
+    transform: scale(1);
+    opacity: 1;
+}
+}
+
+// Estilos generales
+body {
+font-family: Arial, sans-serif;
+}
+
+// Estilos para las tarjetas
+.card {
+position: relative;
+overflow: hidden;
+  transform: scale(1); // Escala inicial
+  opacity: 1; // Opacidad inicial
+transition: transform $animation-duration $animation-ease, opacity $animation-duration $animation-ease, box-shadow $animation-duration $animation-ease;
+  animation: zoomFadeIn $animation-duration $animation-ease forwards; // Aplicar animación
+
+&:hover {
+    transform: scale(1.05); // Aumentar el tamaño en hover
+    opacity: 1; // Mantener opacidad completa
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Sombra en hover
+}
+
+.card-body {
+    transition: box-shadow $animation-duration $animation-ease;
+}
+}
+
+

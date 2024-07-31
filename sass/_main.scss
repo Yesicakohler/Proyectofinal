@@ -1,0 +1,27 @@
+/* Estilos del main */
+.hero {
+    background-image: url(../img/img4\ \(2\).jpg);
+    background-size: cover;
+    background-position: top;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section {
+    margin-bottom: 20px;
+}

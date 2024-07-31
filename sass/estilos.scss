@@ -1,0 +1,22 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@import "header";
+@import "resert";
+@import "footer";
+@import "breakpoints";
+@import "contacto";
+@import "main";
+@import "recetas";
+@import "productos";
+@import "card";

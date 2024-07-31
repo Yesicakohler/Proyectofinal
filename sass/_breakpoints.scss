@@ -1,0 +1,42 @@
+/* Media Queries */
+
+/* Para pantallas pequeñas hasta 768px */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Para pantallas medianas de 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Para pantallas grandes de 1025px a 1200px */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Para pantallas extra grandes de 1201px en adelante */
+@media (min-width: 1201px) {
+    .container {
+        max-width: 1400px;
+    }
+}
